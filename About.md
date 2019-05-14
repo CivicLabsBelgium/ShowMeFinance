@@ -10,7 +10,7 @@
  
 ## How to fix it 
 
-- Leveraging collaborative programming method and tools to pass actionable information to the general public in visual form and clear language. 
+- Leveraging collaborative programming methods and tools to pass actionable information to the general public in visual form and clear language. 
 - Open sourcing information on trade markets to improve transparency and promote ethical finance. 
 - Moving from competition to collaboration in market analysis to build up accountability and trust.
 - Using free and open databases and API's to improve financial literacy and raise awareness on economical issues.
