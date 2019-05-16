@@ -21,10 +21,40 @@
 
 Free and public API using FIGI, an open standard for identifying financial instruments managed by Bloomberg. The API allows for “mapping” financial products, that is, to extract metadata associated with a given instrument by making a POST request containing identifiers of the said instrument. OpenFIGI accepts identifiers of various types.  
 
+
 ### Example of mapping request
+
 
 ![https://www.openfigi.com/api#introduction](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(1).png)
 
+
+Below, the response to the curl command from above: 
+
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(2).png)
+
+
+The httr package for R allows to use http verbs like POST with web API’s. 
+Here’s an example of a mapping request with httr
+
+```R
+library(httr)
+
+mapurl <- "https://api.openfigi.com/v2/mapping"
+
+AAB <- POST(mapurl, body = '[{ "idType": "ID_ISIN", "idValue": "IT0005137614" }]', content_type_json())
+content(AAB) 
+```
+
+
+
+
+
+library(httr)
+
+mapurl <- "https://api.openfigi.com/v2/mapping"
+
+AAB <- POST(mapurl, body = '[{ "idType": "ID_ISIN", "idValue": "IT0005137614" }]', content_type_json())
+content(AAB) 
 
 
 
