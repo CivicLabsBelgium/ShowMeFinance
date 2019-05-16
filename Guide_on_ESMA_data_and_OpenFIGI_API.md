@@ -33,7 +33,7 @@ Below, the response to the curl command from above:
 ![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(2).png)
 
 
-On the left the properties, on the right their corresponding values. Each value is an attribute of the financial instrument identified on top of the response by its FIGI number. Depending of the request, the response may contain more than one mapping job. For example, a request can be made for an ISIN (`idValue` in the body of the request) corresponding to many composite FIGI’s at the market level (`compositeFIGI` in the response).  
+On the left the properties, on the right their corresponding values. Each value is an attribute of the financial instrument identified on top of the response by its FIGI number. Depending of the request, the response may contain more than one mapping job. For example, a request can be made for an ISIN (`idValue` in the body of the request) corresponding to many composite FIGI’s at the market level (`compositeFIGI` in the response). More on this below. 
 
 The httr package for R allows to use http verbs like POST with web API’s. 
 Follow this link for an [example of a mapping request with httr](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/OpenFIGI_mapping_in_R.md).
