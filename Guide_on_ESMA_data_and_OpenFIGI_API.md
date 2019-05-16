@@ -7,7 +7,7 @@
 > According to Article 4(1)(20) of Directive 2014/65/EU (MiFID II) investment firms dealing on own account when executing client orders over the counter (OTC) on an organised, frequent, systematic and substantial basis are subject to the mandatory systematic internaliser (SI) regime. 
 
 
-![Data set from the Systematic Internaliser calculations](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(0).png)
+![\Data set from the Systematic Internaliser calculations](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(0).png)
 
 * Col. A and B give the starting and ending dates of the Systematic Internaliser calculations. Market participants are required by the ESMA to submit their transactions figures on a voluntary basis if they pass a given threshold. This policy is known as the Systematic Internaliser regime. Above the threshold, a market participant receives the denomination “systematic internaliser” from the ESMA. Other denominations are used and are being discussed in an effort to regulate Over-The-Counter (OTC) platforms.
 
