@@ -1,6 +1,6 @@
 # Understanding the ESMA data and the OpenFIGI API
 
-## The ESMA data
+## The ESMA data on financial transactions in the EU
 
 [Data sets published by the European Securities and Markets Authority (ESMA)](https://www.esma.europa.eu/data-systematic-internaliser-calculations) in the frame of the MIFID II directive. 
 
@@ -16,4 +16,17 @@
 * Col. D shows the total number of transactions for the given ISIN during the period of calculation. Transaction data is collected from registered european electronic trading platforms (ETP). 
 
 * Col E. is the total turnover of the calculated transactions, it shows the sum in euros that was spent over the period of calculation to exchange the ISIN in col C. 
+
+## Information available through the [OpenFIGI API](https://www.openfigi.com/api)
+
+Free and public API using FIGI, an open standard for identifying financial instruments managed by Bloomberg. The API allows for “mapping” financial products, that is, to extract metadata associated with a given instrument by making a POST request containing identifiers of the said instrument. OpenFIGI accepts identifiers of various types.  
+
+### Example of mapping request
+
+![https://www.openfigi.com/api#introduction](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(1).png)
+
+
+
+
+
 
