@@ -36,7 +36,7 @@ Below, the response to the curl command from above:
 On the left the properties, on the right their corresponding values. Each value is an attribute of the financial instrument identified on top of the response by its FIGI number. Depending of the request, the response may contain more than one mapping job. For example, a request can be made for an ISIN (`idValue` in the body of the request) corresponding to many composite FIGI’s at the market level (`compositeFIGI` in the response). More on this below. 
 
 The httr package for R allows to use http verbs like POST with web API’s. 
-Follow this link for an [example of a mapping request with httr](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/OpenFIGI_mapping_in_R.md).
+Follow this link for an example of [mapping request of an Italian sovereign bond](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/OpenFIGI_mapping_in_R.md).
 
 ```R
 library(httr)
@@ -59,6 +59,29 @@ responseEq <- POST(mapurl, body = '[{ "idType": "ID_ISIN", "idValue": "US4592001
 
 content(responseEq)
 ```
+
+JSON response from the console: 
+
+```
+[[1]]$`data`[[141]]
+[[1]]$`data`[[141]]$`figi`
+[1] "BBG00JX0P1F5"
+
+[[1]]$`data`[[141]]$name
+[1] "INTL BUSINESS MACHINES CORP"
+
+[[1]]$`data`[[141]]$ticker
+[1] "IBM*"
+
+[[1]]$`data`[[141]]$exchCode
+[1] "MU"
+
+[[1]]$`data`[[141]]$compositeFIGI
+[1] "BBG000HW8Q13"
+```
+
+At least 36 mapping jobs in the response, from [[115]] to [[141]], each corresponding to a different trading floor (`exchCode`)
+
 
 
 
