@@ -46,6 +46,19 @@ mapurl <- "https://api.openfigi.com/v2/mapping"
 AAB <- POST(mapurl, body = '[{ "idType": "ID_ISIN", "idValue": "IT0005137614" }]', content_type_json())
 content(AAB) 
 ```
+The `POST`function takes a body argument in the form of an array of objects (or mapping jobs): `[{...}, {...}, ...]`.
+
+### Example of mapping request for an equity traded on multiple trading floors 
+
+```R
+library(httr)
+
+mapurl <- "https://api.openfigi.com/v2/mapping"
+
+responseEq <- POST(mapurl, body = '[{ "idType": "ID_ISIN", "idValue": "US4592001014" }]', content_type_json())
+
+content(responseEq)
+```
 
 
 
