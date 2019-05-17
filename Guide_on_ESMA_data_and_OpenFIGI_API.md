@@ -82,6 +82,19 @@ JSON response from the console:
 
 At least 36 mapping jobs in the response, from [[115]] to [[141]], each corresponding to a different trading floor (`exchCode`)
 
+To prevent lengthy responses, [OpenFIGI has a rate limit](https://www.openfigi.com/api#rate-limit) , which can be raised with an API key obtainable with an email address attached to a valid domain:
+
+### Formatting a request
+
+#### ISIN and FIGI identifiers 
+
+Since ISIN and FIGI are the two identifiers used for mapping the SI lists from ESMA on OpenFIGI, only these are discussed here. 
+
+The table below comes from [the OpenFIGI documentation on the API](https://www.openfigi.com/api#post-v2-mapping), it shows the identifier elements of a mapping request. `idType` gives the type of identifier used and `idValue` gives the actual number identifying the instrument. 
+
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(3).png)
+
+
 
 
 
