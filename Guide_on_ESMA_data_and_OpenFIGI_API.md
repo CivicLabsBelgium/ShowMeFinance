@@ -114,6 +114,31 @@ Bloomberg developed the FIGI identifier to address the complexity of competing i
 
 ![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(6).png)
 
+The FIGI is used to identify a single instrument across all markets. As a global identifier, it is similar to the ISIN.  
+
+The composite FIGI links an instrument to its global FIGI at the trade venue level. It is designed to replace the various third party identifiers used by market participants.
+
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(7).png)
+
+The share class FIGI is a third layer of identification for instruments traded in multiple countries:
+
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(8).png)
+
+The security ID number gives some description of the instrument. In the example below, IBM is the company emitting the bond, 7 stands for 7% interest rate and 10/30/25 is the maturity date.
+
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(9).png)
+
+### Other exploitables properties in mapping requests
+
+OpenFIGI allows for mapping request detailing specific properties of the instruments. Below is an overview of what kind of information to expect with the most relevant properties. 
+
+#### Trading floors
+
+
+
+
+
+
 
 
 
