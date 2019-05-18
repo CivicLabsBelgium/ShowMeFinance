@@ -28,7 +28,8 @@ Free and public API using FIGI, an open standard for identifying financial instr
 ![https://www.openfigi.com/api#introduction](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(1).png)
 
 
-Below, the response to the curl command from above: 
+
+
 
 ![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(2).png)
 
@@ -94,6 +95,16 @@ The table below comes from [the OpenFIGI documentation on the API](https://www.o
 
 ![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(3).png)
 
+
+The request needs at least the IdType and idValue of the instrument. 
+
+Third party identifiers are standards created by various organisations to identify traded instruments. 
+
+IN the link below, the [list of available identifiers](https://www.openfigi.com/api#v2-idType-values)  to make requests to OpenFIGI:  
+
+To identify a given instrument across countries and trading floors, a combination of properties are needed in the mapping request.  
+
+The ISIN is the identifier used in the SI lists. It’s the most common identifier worldwide: 
 
 
 
