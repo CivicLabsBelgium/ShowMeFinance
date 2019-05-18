@@ -108,6 +108,13 @@ The ISIN is the identifier used in the SI lists. It’s the most common identifi
 
 ![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(5).png)
 
+A mapping job of the SI lists would contain at least the ISIN codes. 
+
+Bloomberg developed the FIGI identifier to address the complexity of competing identification standards:
+
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(6).png)
+
+
 
 
 
