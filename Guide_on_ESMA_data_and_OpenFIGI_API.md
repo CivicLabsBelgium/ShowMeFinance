@@ -106,6 +106,7 @@ To identify a given instrument across countries and trading floors, a combinatio
 
 The ISIN is the identifier used in the SI lists. It’s the most common identifier worldwide: 
 
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(5).png)
 
 
 
