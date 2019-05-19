@@ -116,7 +116,7 @@ To identify a given instrument across countries and trading floors, a combinatio
 The ISIN is the identifier used in the SI lists. It’s the most common identifier worldwide: 
 
 
-![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(5).png)
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(4).png)
 
 
 A mapping job of the SI lists would contain at least the ISIN codes. 
@@ -124,7 +124,7 @@ A mapping job of the SI lists would contain at least the ISIN codes.
 Bloomberg developed the FIGI identifier to address the complexity of competing identification standards:
 
 
-![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(6).png)
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(5).png)
 
 
 The FIGI is used to identify a single instrument across all markets. As a global identifier, it is similar to the ISIN.  
@@ -132,19 +132,19 @@ The FIGI is used to identify a single instrument across all markets. As a global
 The composite FIGI links an instrument to its global FIGI at the trade venue level. It is designed to replace the various third party identifiers used by market participants.
 
 
-![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(7).png)
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(6).png)
 
 
 The share class FIGI is a third layer of identification for instruments traded in multiple countries:
 
 
-![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(8).png)
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(7).png)
 
 
 The security ID number gives some description of the instrument. In the example below, IBM is the company emitting the bond, 7 stands for 7% interest rate and 10/30/25 is the maturity date.
 
 
-![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(9).png)
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(8).png)
 
 
 ### Other exploitables properties in mapping requests
@@ -156,7 +156,7 @@ OpenFIGI allows for mapping request detailing specific properties of the instrum
 #### Trading floors
 
 
-![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(10).png)
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(9).png)
 
 Request for instruments exchanged on a specific trading floor. Useful for targeting marketplaces in Europe for example. 
 Here's [the full list of codes](https://www.openfigi.com/api/enumValues/v2/exchCode) under this property. 
@@ -170,14 +170,14 @@ The codes are mostly impossible to read at first look, it will be necessary to j
 The following property is the ISO list of marketplaces[](https://www.openfigi.com/api/enumValues/v2/micCode). `micCode` is equivalent to `exchCode` but the list is a bit shorter.
 
 
-![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(11).png)
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(10).png)
 
 
 
 #### Currency
 
 
-![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(12).png)
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(11).png)
 
 
 Filtering a mapping request by currency. Searching for equities traded in euro could be a way to narrow the search in OpenFIGI for europeans trading floors. This property doesn’t appear in the mapping response, it can only be used to narrow a mapping request. 
@@ -186,7 +186,7 @@ Filtering a mapping request by currency. Searching for equities traded in euro c
 #### Market sector
 
 
-![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(13).png)
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(12).png)
 
 
 Market sectors include categories such as equity, government bonds or commodity. Her's the full list of values[](https://www.openfigi.com/api/enumValues/v2/marketSecDes), it’s short.  
