@@ -202,13 +202,13 @@ Market sectors include categories such as equity, government bonds or commodity.
 #### Security type
 
 
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(13).png)
 
 
+The [list of values for security type](https://www.openfigi.com/api/enumValues/v2/securityType) is long and detailed. First thing to do should be translating the codes into human readable names. It seems redundant to request a mapping job with a combination of ISIN identifier and security type, but after mapping the whole ESMA list, typology will be useful. One important caveat is the veracity of ESMA data regarding derivatives, which constitute the majority of security types. It should be assessed whether or not numbers can be trusted.  
 
 
-
-
-
-
-
-
+*Post mapping:*
+- Making codes human-readable 
+- Batching security type values following a typology adapted to communication 
+- Combine typology with properties such as trading floors and countries for counts and stats
