@@ -134,6 +134,24 @@ OpenFIGI allows for mapping request detailing specific properties of the instrum
 
 #### Trading floors
 
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(10).png)
+
+Request for instruments exchanged on a specific trading floor. Useful for targeting marketplaces in Europe for example. 
+Here's [the full list of codes](https://www.openfigi.com/api/enumValues/v2/exchCode) under this property. 
+The codes are mostly impossible to read at first look, it will be necessary to join them to their human readable names. 
+
+**Post mapping:** 
+- Analysing network of trading floors for centrality.  
+- Ranking trading floors by volume and specialty.
+- Combining with market sector and security type.  
+
+The following property is the ISO list of marketplaces[](https://www.openfigi.com/api/enumValues/v2/micCode). `micCode` is equivalent to `exchCode` but the list is a bit shorter.
+
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(11).png)
+
+
+
+
 
 
 
