@@ -1,6 +1,8 @@
 # Understanding the ESMA data and the OpenFIGI API
 
+
 ## The ESMA data on financial transactions in the EU
+
 
 [Data sets published by the European Securities and Markets Authority (ESMA)](https://www.esma.europa.eu/data-systematic-internaliser-calculations) in the frame of the MIFID II directive. 
 
@@ -17,7 +19,9 @@
 
 * Col E. is the total turnover of the calculated transactions, it shows the sum in euros that was spent over the period of calculation to exchange the ISIN in col C. 
 
+
 ## Information available through the [OpenFIGI API](https://www.openfigi.com/api)
+
 
 Free and public API using FIGI, an open standard for identifying financial instruments managed by Bloomberg. The API allows for “mapping” financial products, that is, to extract metadata associated with a given instrument by making a POST request containing identifiers of the said instrument. OpenFIGI accepts identifiers of various types.  
 
@@ -49,7 +53,9 @@ content(AAB)
 ```
 The `POST`function takes a body argument in the form of an array of objects (or mapping jobs): `[{...}, {...}, ...]`.
 
+
 ### Example of mapping request for an equity traded on multiple trading floors 
+
 
 ```R
 library(httr)
@@ -85,9 +91,12 @@ At least 36 mapping jobs in the response, from [[115]] to [[141]], each correspo
 
 To prevent lengthy responses, [OpenFIGI has a rate limit](https://www.openfigi.com/api#rate-limit) , which can be raised with an API key obtainable with an email address attached to a valid domain:
 
+
 ### Formatting a request
 
+
 #### ISIN and FIGI identifiers 
+
 
 Since ISIN and FIGI are the two identifiers used for mapping the SI lists from ESMA on OpenFIGI, only these are discussed here. 
 
@@ -106,33 +115,46 @@ To identify a given instrument across countries and trading floors, a combinatio
 
 The ISIN is the identifier used in the SI lists. It’s the most common identifier worldwide: 
 
+
 ![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(5).png)
+
 
 A mapping job of the SI lists would contain at least the ISIN codes. 
 
 Bloomberg developed the FIGI identifier to address the complexity of competing identification standards:
 
+
 ![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(6).png)
+
 
 The FIGI is used to identify a single instrument across all markets. As a global identifier, it is similar to the ISIN.  
 
 The composite FIGI links an instrument to its global FIGI at the trade venue level. It is designed to replace the various third party identifiers used by market participants.
 
+
 ![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(7).png)
+
 
 The share class FIGI is a third layer of identification for instruments traded in multiple countries:
 
+
 ![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(8).png)
+
 
 The security ID number gives some description of the instrument. In the example below, IBM is the company emitting the bond, 7 stands for 7% interest rate and 10/30/25 is the maturity date.
 
+
 ![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(9).png)
+
 
 ### Other exploitables properties in mapping requests
 
+
 OpenFIGI allows for mapping request detailing specific properties of the instruments. Below is an overview of what kind of information to expect with the most relevant properties. 
 
+
 #### Trading floors
+
 
 ![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(10).png)
 
@@ -140,18 +162,44 @@ Request for instruments exchanged on a specific trading floor. Useful for target
 Here's [the full list of codes](https://www.openfigi.com/api/enumValues/v2/exchCode) under this property. 
 The codes are mostly impossible to read at first look, it will be necessary to join them to their human readable names. 
 
-**Post mapping:** 
+*Post mapping:* 
 - Analysing network of trading floors for centrality.  
 - Ranking trading floors by volume and specialty.
 - Combining with market sector and security type.  
 
 The following property is the ISO list of marketplaces[](https://www.openfigi.com/api/enumValues/v2/micCode). `micCode` is equivalent to `exchCode` but the list is a bit shorter.
 
+
 ![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(11).png)
 
 
 
+#### Currency
 
+
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(12).png)
+
+
+Filtering a mapping request by currency. Searching for equities traded in euro could be a way to narrow the search in OpenFIGI for europeans trading floors. This property doesn’t appear in the mapping response, it can only be used to narrow a mapping request. 
+
+
+#### Market sector
+
+
+![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(13).png)
+
+
+Market sectors include categories such as equity, government bonds or commodity. Her's the full list of values[](https://www.openfigi.com/api/enumValues/v2/marketSecDes), it’s short.  
+
+
+*Post mapping:* 
+- Counting instruments by market sector.
+- Combining with trading floors and countries.
+- Translate codes in human-readable names. 
+- Network analysis for centrality.
+
+
+#### Security type
 
 
 
