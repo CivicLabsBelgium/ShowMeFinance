@@ -9,8 +9,7 @@ By mapping the SI lists with the OpenFIGI API, it is possible to obtain more det
 Following the initial goal to obtain information on the secondary market of sovereign bonds and investigate vulture funds, 
 the focus is here on a sovereign bond from Italy. Sovereign bonds are found in the Non-equity CSV files of the ESMA Systematic Internaliser Calculations. 
 
-Posterior to the mapping job, the original CSV file from the SI list has been uploaded and cleaned in RStudio, 
-this part is dealt with in (INTERNAL LINK)  
+Posterior to the mapping job, [the original CSV file from the SI list has been uploaded and cleaned in RStudio](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Import_ISIN_list_in_R.md).
 
 ## Data from the ESMA
 
