@@ -34,7 +34,7 @@ AAB <- POST(mapurl, body = '[{ "idType": "ID_ISIN", "idValue": "IT0005137614" }]
 content(AAB)
 ```
 
-The response from the console:
+Response from the console:
 
 ```R
 > IT0 <- content(AAB)
