@@ -19,6 +19,8 @@
 
 
 
+
+
 ## In practice: Mapping European financial data to the OpenFIGI API 
 
 - Objectives 
