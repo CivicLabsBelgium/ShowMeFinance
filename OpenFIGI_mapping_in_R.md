@@ -60,4 +60,4 @@ List of 1
 
 The property `exchcode` stands for trading floor, the value `MOT` is the code designating [the multilateral trading facility for fixed income regulated by Borsa Italiana](https://www.lseg.com/areas-expertise/our-markets/borsa-italiana/fixed-income-markets/mot), a branch of London Stock Exchange.
 
-More information on the metadata in the response in the Guide (INTERNAL LINK)
+[Click here for more information on the metadata in the response](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Guide_on_ESMA_data_and_OpenFIGI_API.md)
