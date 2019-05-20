@@ -39,3 +39,4 @@ Follow this link for [detailed information and methods](https://github.com/Civic
 
 - [Importing the ESMA data into R](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Import_ISIN_list_in_R.md)
 - [Mapping of an Italian bond with OpenFIGI using R](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/OpenFIGI_mapping_in_R.md)
+- Next: mapping whole ESMA lists with OpenFIGI (in progress) 
