@@ -18,9 +18,6 @@
 
 
 
-
-
-
 ## In practice: Mapping European financial data to the OpenFIGI API 
 
 - Objectives 
@@ -32,3 +29,13 @@ Combine this data with publicly available API’s in order to enrich and refine 
  
 A free and public API using an open standard for identifying financial instruments, the FIGI, managed by Bloomberg. The API allows for “mapping” financial products, that is, to extract metadata associated with a given instrument by making a POST request containing identifiers of various types.
 The identifier found in the ESMA data is the ISIN, managed by Standard and Poor’s. Each financial product in the lists possesses an ISIN, which can be used to retrieve metadata from OpenFIGI. 
+
+
+### What you can find in the ESMA and OpenFIGI data
+
+Follow this link for [detailed information and methods](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Guide_on_ESMA_data_and_OpenFIGI_API.md) to combine both sources. 
+
+### Buildings functions for a package 
+
+- [Importing the ESMA data into R](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Import_ISIN_list_in_R.md)
+- [Mapping of an Italian bond with OpenFIGI using R](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/OpenFIGI_mapping_in_R.md)
