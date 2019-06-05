@@ -189,7 +189,7 @@ Filtering a mapping request by currency. Searching for equities traded in euro c
 ![](https://github.com/CivicLabsBelgium/ShowMeFinance/blob/master/Images/Screenshot_2019-05-16%20guide%20on%20SI%20and%20OpenFIGI%20(12).png)
 
 
-Market sectors include categories such as equity, government bonds or commodity. Her's the full list of values[](https://www.openfigi.com/api/enumValues/v2/marketSecDes), it’s short.  
+Market sectors include categories such as equity, government bonds or commodity. [Here's the full list of values](https://www.openfigi.com/api/enumValues/v2/marketSecDes), it’s short.  
 
 
 *Post mapping:* 
