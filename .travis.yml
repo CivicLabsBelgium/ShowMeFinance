@@ -5,6 +5,11 @@ language: r
 r:
   - release
 
+cache:
+  packages: yes
+  directories:
+    - $HOME/bin
+
 script:
   - Rscript -e "install.packages('bookdown')"
   - Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::gitbook')"
@@ -12,5 +17,7 @@ script:
 install:
   - npm install -g firebase-tools
 
-after_success:
-  - firebase deploy --only hosting --token "$FIREBASE_TOKEN"
+deploy:
+  provider: firebase
+  token:
+    secure: "$FIREBASE_TOKEN"
