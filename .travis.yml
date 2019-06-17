@@ -3,15 +3,16 @@ branches:
    - master
 language: r
 r:
-- release
+  - release
 
-r_packages: bookdown
+r_packages:
+  - bookdown
 
 script:
   - Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::gitbook')"
 
 install:
-- npm install -g firebase-tools
+  - npm install -g firebase-tools
 
 after_success:
- - firebase deploy --only hosting --token "$FIREBASE_TOKEN"
+  - firebase deploy --only hosting --token "$FIREBASE_TOKEN"
