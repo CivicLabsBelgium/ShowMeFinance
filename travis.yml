@@ -1,0 +1,22 @@
+branches:
+  only:
+   - master
+language: r
+r:
+- '3.5.3'
+r_packages:
+  - bookdown
+
+cache:
+  packages: yes
+  directories:
+    - $HOME/bin
+
+script:
+  - Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::gitbook')"
+
+install:
+- npm install -g firebase-tools
+
+after_success:
+ - firebase deploy --only hosting --token "$FIREBASE_TOKEN"
