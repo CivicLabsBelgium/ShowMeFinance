@@ -5,14 +5,7 @@ language: r
 r:
 - release
 
-cache:
-  packages: yes
-  directories:
-    - $HOME/bin
-
-before_install:
-    r_packages:
-        - bookdown
+r_packages: bookdown
 
 script:
   - Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::gitbook')"
