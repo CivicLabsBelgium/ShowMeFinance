@@ -1,0 +1,19 @@
+bookdown::gitbook:
+  css: css/style.css
+  split_by: rmd
+  config:
+    toc:
+      collapse: none
+      before: |
+        <li><a href="./">Show Me Finance</a></li>
+      after: |
+        <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+    download: 
+    edit: https://github.com/CivicLabsBelgium/ShowMeFinance/edit/master/%s
+    sharing:
+      github: yes
+      facebook: no
+      twitter: yes
+      all: no
+bookdown::html_chapters:
+  css: [css/style.css]
