@@ -5,10 +5,8 @@ language: r
 r:
   - release
 
-r_packages:
-  - bookdown
-
 script:
+  - Rscript -e "install.packages('bookdown')"
   - Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::gitbook')"
 
 install:
