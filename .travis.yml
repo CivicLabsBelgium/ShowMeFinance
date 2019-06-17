@@ -3,14 +3,16 @@ branches:
    - master
 language: r
 r:
-- '3.5.3'
-r_packages:
-  - bookdown
+- release
 
 cache:
   packages: yes
   directories:
     - $HOME/bin
+
+before_install:
+    r_packages:
+        - bookdown
 
 script:
   - Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::gitbook')"
