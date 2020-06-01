@@ -1,6 +1,6 @@
 ---
 title: "Show Me Finance : Mapping European financial data to the OpenFIGI API "
-author: "A **CivicLabs Belgium** project by : Antoine Kopij, Bert Jehoul, Yulia Kazakova, .. (we welcome all contributions, feel free to add your name to the author list)"
+author: "A **CivicLabs Belgium** project by : Antoine Kopij, Bert Jehoul, Ron, .. (we welcome all contributions, feel free to add your name to the author list)"
 site: bookdown::bookdown_site
 documentclass: book
 github-repo: CivicLabsBelgium/ShowMeFinance
