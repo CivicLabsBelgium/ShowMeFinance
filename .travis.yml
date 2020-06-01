@@ -12,6 +12,7 @@ script:
 - Rscript -e "install.packages('bookdown')"
 - Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::gitbook')"
 install:
+- nvm install node
 - npm install -g firebase-tools
 deploy:
   skip_cleanup: true
