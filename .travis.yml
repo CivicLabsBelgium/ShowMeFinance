@@ -12,10 +12,14 @@ script:
 - Rscript -e "install.packages('bookdown')"
 - Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::gitbook')"
 install:
+- nvm install node
 - npm install -g firebase-tools
 deploy:
   skip_cleanup: true
   provider: firebase
   token:
     secure: YwhlgLU/y/RCqPEs1d8X9Oc9bjYiygSVJ3lf1d35aAg9kKoIh9jpACMg3dQWiXSR6ti2KER/wKA3LHhNS3/rmDtaNz2JInuy4Proi/FMybmEiBBZT523A1W7exmO7ai4udfOL7cXxUHP2tJVPeuDKgmSSaKZeTBjRRGM/eZSOW/qh9uVaVwF7cPgwJa/oCFOUabiUWA0iu7JC3VxjS9FzvtvH21eIMzifQnDHwY901fMQChDk4UFJhh4fudWPl+CBrPJaXfHcOrmeZ23LZddKYI6tsB+HnoZO2nVdQbEUKvxBk51AMWGVe03ZW/VpeGigYzVbsjc+DTFT7d6dT3iZSTToA2zFGp+GELZ+LzaY50CTqbeY/maMzhgmmslcsVHMkWUimyKdUAGwFdtKqpFivYbrTMSrckVDNb/sMPl4tzPj3iDuDmA9lA8qxWjojhivoqkGFE6Qi9Ao5CTYxX410sYCQXcQ/IKMRjugQrYqwqO8/xBbK+Gyxw+w2HGQFeNUIzR/Ea6dEEq7plPsajTD6Nfh0AOAAu7Txu6r5KyPugu9V85NUVUMehCauFLq952uMTOw9MP/m9dTI66s2bk1XC1llMreSxSIpaUZUgwQi+lzrsXr1oPHaVaNtncKu3XV0BoM1UsCRJgRKqIXL0hMKqZQ0oYLKCNE1vu66JlU+k=
-  project: "showmefinance-org"
+  project: showmefinance-org
+env:
+  global:
+    secure: 3CEzuHNNroyHWwK3DIILnRJn7BpdKiDaO/8F7tpv3oKJ++0zyYfVdu4vlVfwJdovNG3H+BzKIoC1CJWc2aQJ5/nZmKLJN+CIJQhf1LU7vx7pErHSuzL81YomV5OxMUyAWAfkxfEdomUaOxIeTfjdtUzMIr99MNcmX461OV/w0B9a4QGXfDZK6L+yJXpH78Osk+RNlPs3jeVeDCXwjT+WSNKuFrmyr7iv+lJEbiqt2v8Qz7arTfrtMGqGA31y8SyiY0s90eSZfqm0uMS4aYjJS3YvgHtjcfL1sOkqsEm0bQGNcuS2tsc/r4uGIUHQOrb+hLR3Y3npkxWO68kbiGLCMoGNub8EqJiW6AHIFJBFfg9EEFBT8Indl7FxRzDHStx/m8UywKHrVYIeJTP3TuOyyGKaFDKw9jq1IpI0NECSRjAuryKcQ/QrVicZz5vcmukBOfZMrXZoyLNl8ZUl7/is3zPr8e6aNVnlIToxOCXtQmAHZC6CMsDcsPevUt7sVcfZrW8D/LvAs8cuzyzj2ZJgAFFX52WzFMiaFiOotNmcUj8yFHYDryxb4s7anEWDc/KynDk3XMeihbGoka4AEjxYjD//ZjKDaaq6b70ymYtvl7mwwBoPN8HQdEdhLR0ija+qMms+0VBPa18pZdpdCobGDgNVBKVQNdCCrYytQ0U3q64=
