@@ -15,7 +15,7 @@ main = do
 -- close both files
   hClose ih
   hClose oh
-
+-- process the file, record after record
 mainloop :: Handle -> Handle -> [String] -> IO ()
 mainloop ih oh l =
   -- hIsEOF is True when we reached the end of file
