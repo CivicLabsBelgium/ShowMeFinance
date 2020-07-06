@@ -1,0 +1,6 @@
+ghci
+:module Database.HDBC Database.HDBC.PostgreSQL
+conn <- connectPostgreSQL "host=localhost dbname=smf"
+run conn "create table country (iso char(2) not null, countryname varchar(40) not null, primary key(iso))" []
+getTables conn
+run conn "INSERT INTO country (iso, countryname) VALUES (?,?)" [toSql "BE",toSql "Belgium"]
