@@ -2,14 +2,17 @@
 import Database.HDBC.PostgreSQL
 import Database.HDBC
 {-
-Define a function that will fetch all rows from the table country,
-and print them to the screen in a friendly format.
+Define a function that will fetch all rows from the table authority,
+get the connected countries, and print them to the screen in a friendly format.
 -}
-readCountry = do -- Connect to the Database
+printAuthAndCountry = do
+  -- Connect to the Database
   conn <- connectPostgreSQL "dbname=smf"
-  -- test to see if the connection is ok
---   t <- getTables conn
---   putStrLn (if t == [] then "no table found" else head t)
+  -- to test the connection
+  t <- getTables conn
+  putStrLn (if t == [] then "no table found" else head t)
+  -- or? if t == [] then putStrLn "no table found"
+  --                else mapM putStrLn t
 
   -- run the query and store the results in r
   r <- quickQuery' conn
