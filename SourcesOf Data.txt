@@ -1,0 +1,44 @@
+Sources of data
+===============
+
+This is a list of sources of data copied from Slack to preserve them.
+
+Our world in data
+https://ourworldindata.org/
+
+World Bank
+https://databank.worldbank.org/home
+
+Sovereign Bond Holdings | Bruegel
+https://www.bruegel.org/publications/datasets/sovereign-bond-holdings/
+https://www.bruegel.org/publications/datasets/
+
+Bundesbank statistics
+https://www.bundesbank.de/de/statistiken
+
+France, données du gouvernement
+https://www.data.gouv.fr/fr/
+
+ICIJ
+https://offshoreleaks.icij.org/pages/database
+
+ESMA
+https://www.esma.europa.eu/data-systematic-internaliser-calculations
+
+RYBN
+http://rybn.org/thegreatoffshore/encyclopedia.php
+
+ISIN
+https://www.isin.org/isin-database/
+
+OpenFIGI
+https://www.openfigi.com/api
+
+iShares BlackRock
+https://www.ishares.com
+
+Data Share
+https://datashare.icij.org/
+
+Data Journalism
+https://datajournalism.com/read/handbook/two/experiencing-data/searchable-databases-as-a-journalistic-product
