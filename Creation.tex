@@ -1,0 +1,303 @@
+% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Will Robertson's fontspec.sty can be used to simplify font choices.
+% To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+% and change "Hoefler Text" to any of these choices.
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Hoefler Text}
+\setmainfont[Mapping=tex-text, ItalicFont=Hoefler Text Italic]{Hoefler Text}
+
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+\usepackage[french]{babel}
+
+\title{Show Me Finance asbl}
+%\author{The Author}
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+% For many users, the previous commands will be enough.
+% If you want to directly input Unicode, add an Input Menu or Keyboard to the menu bar 
+% using the International Panel in System Preferences.
+% Unicode must be typeset using a font containing the appropriate characters.
+% Remove the comment signs below for examples.
+
+% \newfontfamily{\A}{Geeza Pro}
+% \newfontfamily{\H}[Scale=0.9]{Lucida Grande}
+% \newfontfamily{\J}[Scale=0.85]{Osaka}
+
+% Here are some multilingual Unicode fonts: this is Arabic text: {\A السلام عليكم}, this is Hebrew: {\H שלום}, 
+% and here's some Japanese: {\J 今日は}.
+
+Les fondateurs:
+
+\emph{je les ai mis par ordre alphabétique}
+\begin{itemize}
+\item Falisse Jean, domicilié à Watermael-Boitsfort,
+\item Kopij Antoine, domicilié à \emph{adresse Antoine},
+\item Bryony Ulyett, domiciliée à \emph{adresse Bryony},
+\end{itemize}
+déclarent constituer entre eux une Association Sans But Lucratif, conformément au Code des Sociétés et des Associations en fixant les statuts comme suit:
+
+\section*{Titre I – Dénomination, Siège, But et Durée}
+\subsection*{Article 1 - Dénomination}
+L'association prend pour dénomination: \og Show Me Finance asbl \fg .
+
+\subsection*{Article 2 - Siège social}
+Son siège social est établi en Région Wallonne, à l'adresse suivante:
+\emph{adresse SMF}.
+\subsection*{Article 3 - But}
+L'association a pour but, en référence en particulier au dicton financier américain \og sunshine is the best disinfectant \fg :
+
+\emph{Je me suis lancé. N'hésitez pas à améliorer.}
+\begin{itemize}
+\item l'analyse de données afin de mettre en évidence diverses pratiques financières;
+
+\item la publication et la publicité, par tout moyen approprié, des résultats et des analyses réalisées;
+\item la prestation à façon de services divers, d'études, d'analyses en lien avec les pratiques financières.
+\end{itemize}
+
+Elle poursuit la réalisation de son but par tous les moyens et notamment:
+\begin{itemize}
+\item la constitution de bases de données, la rédaction de programmes informatiques, ou l'utilisation de tout moyen technique adéquat afin de mettre en évidence les flux financiers;
+\item la collaboration, sous toute forme utile, à des projets similaires mis en oeuvre par d'autres organisations;
+\item l'engagement à durée limitée ou illimitée de personnel compétent;
+\item la sous-traitance de certaines prestations;
+\item l'acquisition, la cession, la location, de tout bien meuble ou immeuble.
+\end{itemize}
+
+Elle peut faire toute opération civile ou mobilière se rattachant directement ou indirectement, en tout ou en partie, à son but ou pouvant en amener le développement ou en faciliter la réalisation, en ce compris créer, gérer ou participer à tout service ou toute institution visant à atteindre directement ou indirectement le but qu'elle s'est fixé.
+
+\subsection*{Article 4 - Durée}
+L'association est constituée pour une durée indéterminée.
+
+%    Les mots « association sans but lucratif » ou le sigle « ASBL ».
+%    Le nom de l’asbl. Le choix du nom est libre. Toutefois, aucune autre association ou fondation ne peut porter le même nom. Pour le vérifier, consultez la banque de données (link is external) du Moniteur belge.
+%    L’indication de la Région dans laquelle le siège social de l’asbl est établi. Le siège d’une asbl belge doit être situé en Belgique, ce qui ne veut pas dire qu’une association ne peut pas agir à l’étranger.
+%    Le but désintéressé que l’asbl poursuit et les activités qui constituent son objet.
+%    Les conditions et formalités d’admission et de sortie des membres.
+%    Les droits et obligations d’un membre adhérent.
+%    Les attributions et le mode de convocation de l’assemblée générale ainsi que la manière dont ses résolutions sont portées à la connaissance des membres et de tiers.
+%    Les règles concernant la nomination et la cessation de fonctions des administrateurs. Des règles concernant la durée de leur mandat sont aussi obligatoires.
+%    Des dispositions concernant la possibilité pour certaines personnes de représenter l’asbl et/ou d’en assurer la gestion journalière.
+%    Le nombre minimum de membres.
+%    Le montant maximum de la cotisation des personnes qui souhaitent rejoindre l’asbl.
+%    Le but désintéressé auquel l’asbl doit affecter son patrimoine en cas de dissolution.
+%    La durée de vie de l’asbl lorsqu’elle n’est pas illimitée.
+
+\section*{Titre II – Membres}
+
+\subsection*{Article 5 - Composition}
+L'association est composée de membres effectifs. Le nombre de membres effectifs ne peut être inférieur à 2. Leur nombre est illimité.
+
+En dehors des prescriptions légales, les membres effectifs jouissent des droits et sont tenus des obligations qui sont précisées dans le cadre des présents statuts.
+
+\subsection*{Article 6 - Membres effectifs}
+Sont membres effectifs les personnes, physiques ou morales, ayant introduit une demande d'admission acceptée par le conseil d'administration.
+
+Ils disposent des droits les plus étendus sur l'association.
+
+\subsection*{Article 7 - Registre des membres}
+L'association tient, via son Conseil d'administration, un registre des membres conformément à la loi.
+
+\subsection*{Article 8 - Démission, exclusion, suspension}
+Tout membre est libre de se retirer à tout moment de l'association en adressant par écrit sa démission au Conseil d'Administration.
+
+La qualité de membre se perd automatiquement par le décès ou, s'il s'agit d'une personne morale, par la dissolution, la fusion, la scission, la nullité ou la faillite.
+
+Le non-respect des statuts, les infractions graves au règlement d'ordre intérieur, aux lois de l'honneur et de la bienséance, les fautes graves, agissements ou paroles, qui pourraient entacher l'honorabilité ou la considération dont doit jouir l'association, le décès, la faillite, sont des actes qui peuvent conduire à l'exclusion d'un membre.
+
+L'exclusion d'un membre effectif ne peut être prononcée que par l'Assemblée générale à la majorité des deux tiers des voix présentes ou représentées. Le Conseil d'administration peut suspendre les membres visés, jusqu'à la décision de l'Assemblée générale.
+
+Le membre démissionnaire, suspendu ou exclu, ainsi que les créanciers, les héritiers ou ayant-droits du membre décédé ou failli, n'ont aucun droit sur le fonds social. Ils ne peuvent réclamer ou requérir ni relevé, ni reddition de comptes, ni remboursement des cotisations, ni apposition de scellés, ni inventaire.
+
+\section*{Titre III - Cotisation}
+\subsection*{Article 9 - Cotisation}
+Les membres ne sont astreints à aucun droit d'entrée, ni à aucune cotisation. Ils apportent à l'association le concours actif de leurs capacités et de leur dévouement.
+
+\section*{Titre IV - Assemblée Générale}
+\subsection*{Article 10 - Composition}
+L'Assemblée générale rassemble l'ensemble des membres effectifs.
+
+L'Assemblée générale est présidée par le Président du Conseil d'administration ou, à défaut, par le vice-président ou par l'administrateur présent le plus âgé.
+
+Le Conseil d'administration peut inviter toute personne à tout ou partie de l'Assemblée générale en qualité d'observateur ou de consultant. L'Assemblée générale statue sur l'opportunité de cette invitation.
+\subsection*{Article 11 - Pouvoirs}
+L'Assemblée générale possède les pouvoirs qui lui sont expressément reconnus par la loi ou les statuts.
+ Elle est compétente pour:
+\begin{itemize}
+\item la modification des statuts;
+\item la nomination et la révocation des administrateurs;
+\item la nomination et la révocation des commissaires aux comptes et la fixation de leur rémunération dans les cas où une rémunération est attribuée;
+\item la décharge annuelle à octroyer aux administrateurs et aux éventuels commissaires;
+\item l'approbation annuelle des budgets et des comptes;
+\item la dissolution volontaire de l'association et la nomination ou révocation du liquidateur;
+\item l'admission et l'exclusion des membres;
+\item décider d'intenter une action en responsabilité contre tout membre de l'association, tout administrateur, tout commissaire aux comptes, toute personne habilitée à représenter l'association ou tout mandataire désigné par l'assemblée générale;
+\item la transformation de l'association en société à finalité sociale;
+\item l'approbation et la modification du règlement d'ordre d'intérieur;
+\item toutes les autres hypothèses où les statuts ou la loi l'exigent.
+\end{itemize}
+
+\subsection*{Article 12 - Assemblée générale ordinaire}
+L'Assemblée générale ordinaire se tient au minimum une fois par an, dans les six mois suivant la date de clôture de l'exercice social. Elle porte obligatoirement à son ordre du jour:
+\begin{itemize}
+\item la présentation du rapport annuel du Conseil d'Administration;
+\item l'approbation des comptes de l'exercice écoulé;
+\item le budget prévisionnel pour l'exercice suivant.
+\end{itemize}
+
+\subsection*{Article 13 - Assemblée générale extraordinaire}
+L'association peut en outre être réunie en Assemblée générale extraordinaire à tout moment par décision du Conseil d'administration, notamment à la demande d'un cinquième au moins des membres effectifs.
+\subsection*{Article 14 - Convocation}
+Tous les membres effectifs doivent être convoqués à l'Assemblée générale par le Conseil d'administration au moins quinze jours avant la date de celle-ci. La convocation mentionne le jour, l'heure, le lieu et l'ordre du jour de la réunion.
+
+Toute proposition signée par au moins un vingtième des membres effectifs doit être portée à l'ordre du jour.
+
+\subsection*{Article 15 - Quorum de présence}
+Sauf dans les cas où les présents statuts ou la loi en décident autrement, l'Assemblée générale délibère valablement quel que soit le nombre de membres présents.
+\subsection*{Article 16 - Procurations}
+Chaque membre peut se faire représenter par un mandataire, à condition que le mandataire soit lui-même membre de l'association. Chaque mandataire peut détenir au maximum \emph{à compléter} procuration.
+\subsection*{Article 17 - Délibérations}
+L'Assemblée générale délibère sur tous les points qui sont mentionnés à l'ordre du jour. Exceptionnellement, elle peut également délibérer valablement sur des points qui ne sont pas mentionnés à l'ordre du jour.
+
+Tous les membres effectifs ont un droit de vote égal.
+
+Les décisions de l'Assemblée générale sont adoptées à la majorité simple des voix présentes ou représentées, sauf les exceptions prévues par les présents statuts ou par la loi. En cas de partage des voix, celle du Président ou de l'administrateur qui le remplace est prépondérante.
+
+Sont exclus du calcul les votes blancs, nuls et les abstentions.
+\subsection*{Article 18 - Modifications des statuts}
+L'Assemblée générale ne peut voter la modification des statuts que si les modifications sont explicitement indiquées dans la convocation et si au moins les deux tiers des membres sont présents ou représentés.
+
+Les modifications ne sont acceptées que si elles recueillent au moins deux tiers des votes des membres présents ou représentés, excepté les modifications touchant aux buts de l'association, qui doivent recueillir au moins quatre cinquièmes des votes des membres présents ou représentés.
+
+Si les deux tiers des membres ne sont pas présents ou représentés, une deuxième réunion peut être convoquée après un délai d'au moins quinze jours. Cette deuxième réunion pourra délibérer valablement sur la modification des statuts, peu importe le nombre de membres présents ou représentés, mais toujours en respectant les majorités de vote prévues.
+\subsection*{Article 19 - Registre des décisions}
+Les décisions de l'Assemblée sont consignées dans un registre de procès-verbaux contresignés par le Président et un administrateur. Ce registre est conservé au siège social où tous les membres au sens large peuvent en prendre connaissance, après requête écrite au Conseil d'administration avec lequel le membre doit convenir de la date et de l'heure de la consultation. Cette date sera fixée dans un délai d'un mois à partir de la réception de la demande.
+\subsection*{Article 20 - Publication des décisions}
+Conformément à la loi, toute modification des statuts ainsi que tout acte relatif à la nomination ou à la cessation de fonction des administrateurs ou des commissaires sont déposés sans délai au greffe du Tribunal de l'entreprise et publiés au Moniteur belge par les soins du greffier.
+
+\section*{Titre V - Administration}
+\subsection*{Article 21 - Composition}
+L'association est administrée par un organe composé de trois personnes au moins, sauf si l'association ne comporte que deux membres, auquel cas l'organe d'administration peut être composé que de deux personnes. Cet organe est appelé le Conseil d'administration ou le Conseil.
+
+Les administrateurs sont choisis parmi les membres uniquement. Ils sont nommés par l'Assemblée générale pour une durée \emph{à compléter} déterminée, égale à \emph{à compléter}. Une fois leur mandat arrivé à échéance, les membres sortants du Conseil d'administration ne sont pas rééligibles. \emph{peut-être à modifier?}
+
+Les administrateurs exercent leur mandat à titre gratuit. Ils ne contractent, par leur fonction, aucune obligation personnelle. Ils ne sont responsables vis-à-vis de l'association que de l'exécution de leur mandat.
+
+\subsection*{Article 22 - Fonctions}
+Le Conseil désigne parmi ses membres un Président, un Trésorier et un Secrétaire.
+
+Un même administrateur peut être nommé à plusieurs fonctions.
+
+En cas d'empêchement du Président, ses fonctions sont assumées par le plus âgé des administrateurs présents ou toute autre personne désignée par le Conseil d'administration.
+
+\subsection*{Article 23 - Démission, révocation, vacance}
+Tout administrateur qui veut démissionner doit signifier sa décision par écrit au Conseil d'administration. Sa démission prend effet immédiat sauf si elle a pour conséquence que le nombre d'administrateurs devient inférieur au nombre minimum.
+
+Les administrateurs sont en tout temps révocables par l'Assemblée générale.
+
+En cas de vacance d'un mandat, un administrateur provisoire peut être nommé par le l'Assemblée générale. Il achève dans ce cas le mandat de l'administrateur qu'il remplace. Si aucune nomination n'est faite, le Conseil d'administration pourvoira au poste vacant.
+\subsection*{Article 24 - Réunions}
+Le Conseil se réunit chaque fois que les nécessités de l'association l'exigent et chaque fois que le président ou deux de ses membres au moins en fait la demande.
+
+Les convocations sont envoyées par le Secrétaire ou, à défaut, par un administrateur, par simple lettre, courriel ou même verbalement, au moins trois jours calendrier avant la date de réunion. Elles contiennent l'ordre du jour, la date et le lieu où la réunion se tiendra. Sont annexées à cet envoi les pièces soumises à discussion en Conseil d'administration. Si exceptionnellement elles s'avéraient indisponibles au moment de la convocation, elles doivent pouvoir être consultées avant ledit Conseil.
+
+Un administrateur peut se faire représenter par un autre administrateur au moyen d'une procuration écrite signée.
+
+Tout administrateur qui assiste à une réunion du Conseil, ou s'y est fait représenter, est considéré comme ayant été régulièrement convoqué. Un administrateur peut également renoncer à se plaindre de l'absence ou d'une irrégularité de convocation, avant ou après la réunion à laquelle il n'a pas assisté.
+
+Le Conseil d'administration peut inviter à ses réunions toute personne dont la présence lui paraît nécessaire, à titre consultatif uniquement.
+
+\subsection*{Article 25 - Délibérations}
+Le Conseil délibère valablement si au moins \emph{à vérifier ou modifier} la moitié de ses membres est présente ou représenté.
+
+Ses décisions sont prises à la majorité simple des voix. En cas de partage, la voix du Président est déterminante, sauf s'il n'y a que 2 administrateurs, auquel cas le vote est reporté à la prochaine séance.
+
+Ses décisions sont consignées sous forme de procès-verbaux, contresignées par le Président et le Secrétaire et inscrites dans un registre spécial. Ce registre est conservé au siège social.
+\subsection*{Article 26 - Pouvoirs}
+Le Conseil d'administration a les pouvoirs les plus étendus pour l'administration et la gestion de l'association. Seuls sont exclus de sa compétence, les actes réservés par la loi ou les présents statuts à l'Assemblée générale.
+
+\section*{Titre VI - Gestion Journalière}
+
+\subsection*{Article 27 - Gestion journalière}
+Le Conseil d'administration peut déléguer certains pouvoirs à un organe de gestion journalière composé d'une ou plusieurs personnes, administrateurs ou non, agissant en cette qualité.
+
+Les pouvoirs de l'organe de gestion journalière sont limités aux actes de gestion quotidienne de l'association qui permet d'accomplir les actes d'administration:
+\begin{itemize}
+\item qui ne dépassent pas les besoins de la vie quotidienne de l'ASBL;
+\item qui, en raison de leur peu d'importance et de la nécessité d'une prompte solution, ne justifient pas l'intervention du conseil d'administration.
+\end{itemize}
+
+La durée du mandat des délégués à la gestion journalière, éventuellement renouvelable, est fixée par le conseil d'administration.
+
+Quand le délégué à la gestion journalière exerce également la fonction d'administrateur, la fin du mandat d'administrateur entraîne automatiquement la fin du mandat du délégué à la gestion journalière.
+
+Le conseil d'administration peut, à tout moment et sans qu'il doive se justifier, mettre fin à la fonction exercée par la personne chargée de la gestion journalière.
+
+Les actes relatifs à la nomination ou à la cessation des fonctions des personnes déléguées à la gestion journalière sont déposés au greffe du Tribunal de l'entreprise sans délai et publiés conformément à la loi.
+\section*{Titre VII – <span class="flou">85285558585588}
+\subsection*{Article 28 - Représentation}
+%<p><span class="flou">22 8228288 5'55282882552822 5225282222 8'58828852822 5528 2258 828 58228 25588858528 22 2525525588858528.</span></p>
+%<p><span class="flou">58 2252 225222288 8222825 82222 52252822252822 5 52 252522 52 52252822252822 8222282 5'52 25 285882558 552828825522558 25 5'52 25 285882558 28258 5 8'58828852822 52888522 82822 82 858 8258885528822222 25 8222282222222. 25 25 828 225822228 822228522 8'252522 52 52252822252822 2'555222 258 5 258282825 52 82558 22582858 888-5-888 528 28258.</span></p>
+%<p><span class="flou">25 55522 52 8255 252552 22 8255 2822252882 5228282822 282 28522 255 82 8228288 5'55282882552822. 588 8222 22 2252 22228 5282858828 255 858.</span></p>
+%<p><span class="flou">228 58228 52852828 5 85 2228252822 25 5 85 828852822 528 222828228 528 225822228 5588882228 5 52252822225 8'58828852822 8222 5222828 55 252222 55 55885258 52 8'222522882 8528 52858 22 2588828 822225222222 5 85 828.</span></p>
+\section*{Titre VIII - Dispositions Diverses}
+
+\subsection*{Article 29 - Règlement d'ordre intérieur}
+Un règlement d'ordre intérieur pourra être présenté par le Conseil d'administration à l'Assemblée générale. Des modifications à ce règlement pourront être apportées par l'Assemblée générale, statuant à la majorité simple  des membres présents ou représentés.
+
+\subsection*{Article 30 - Exercice social}
+L'exercice social commence le \emph{à compléter} pour se terminer le \emph{à compléter}.
+
+\subsection*{Article 31 - Comptes et budgets}
+Le compte de l'exercice écoulé et le budget de l'exercice suivant seront annuellement soumis à l'approbation de l'assemblée générale ordinaire par le Conseil d'administration.
+
+Les comptes et les budgets de l'association sont tenus, conservés et, publiés conformément à loi.
+
+\subsection*{Article 32 - Consultation des registres et des documents comptables}
+Tout membre peut consulter le registre des membres ainsi que tous les procès-verbaux et décisions de l'assemblée générale, du Conseil d'administration, de même que tous les documents comptables de l'association, sur simple demande écrite et motivée adressée au Conseil d'administration. Le membre est tenu de préciser les documents auxquels il souhaite avoir accès. Le Conseil d'administration convient d'une date de consultation des documents avec le membre. Cette date sera fixée dans un délai d'un mois à partir de la réception de la demande.
+\subsection*{Article 33 - Dissolution}
+En cas de dissolution de l'association, l'Assemblée générale désigne le ou les liquidateurs, détermine leurs pouvoirs et indique l'affectation à donner à l'actif net de l'avoir social. Cette affectation doit obligatoirement être faite en faveur d'un but désintéressé le plus proche possible de celui de l'association.
+
+Toute décision relative à la dissolution, aux conditions de la liquidation, à la nomination et à la cessation des fonctions du ou des liquidateurs, à la clôture de la liquidation, ainsi qu'à l'affectation de l'actif net, est déposée au greffe du Tribunal de commerce et publiée conformément à la loi.
+
+\subsection*{Article 34 - Tout ce qui n'est pas prévu explicitement aux présents statuts est réglé par le Code des Sociétés et des Associations.}
+
+Tels sont les statuts.
+
+À la suite de l'adoption de ces statuts, l'Assemblée générale a élu en ce jour en qualité d'administrateurs:
+\emph{à compléter}
+
+\begin{itemize}
+\item idadminname1, né(e) à idadminbirthplace1, le idadminbirthday1 et domicilié(e) à idadminresidence1;
+
+\item idadminname2, né(e) à idadminbirthplace2, le idadminbirthday2 et domicilié(e) à \emph{à compléter}
+\end{itemize}
+
+Qui acceptent ce mandat.
+
+Fait à \emph{à compléter}
+
+Signature des fondateurs:
+
+\end{document}  
