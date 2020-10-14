@@ -1,0 +1,38 @@
+Tools
+=====
+
+This is a list of tools copied from Slack to preserve them.
+
+mySociety
+https://www.mysociety.org/advice-and-support/
+
+Run your own Freedom of Information website
+Alaveteli
+https://alaveteli.org/
+
+Markets International Calculations Spreadsheets
+http://www.markets-international.com/calculations/calculations.html?Accept=Accept
+
+Import a csv file to a postgresql table
+https://www.postgresqltutorial.com/import-csv-file-into-posgresql-table/
+
+CACM tool for journalists, INJECT
+https://cacm.acm.org/magazines/2020/8/246366-digital-creativity-support-for-original-journalism/fulltext
+
+Crowdfunding
+https://www.assoc.be/index.php?page=crowdfunding
+
+Frictionless Data
+https://frictionlessdata.io
+
+Neo4J
+https://neo4j.com
+
+Quartz
+https://qz.com
+
+Heroku
+https://www.heroku.com/languages
+
+Haskell Data Analysis Cookbook
+http://haskelldata.com/
